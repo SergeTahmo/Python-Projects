@@ -1,4 +1,4 @@
-# Weather Dashboard CLI Tool 🌤️
+# Weather Dashboard CLI Tool 
 
 A simple Python command-line app to fetch current weather data and display a simulated 7-day temperature trend using OpenWeatherMap API.
 
