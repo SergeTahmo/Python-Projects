@@ -3,7 +3,6 @@ import datetime
 import matplotlib.pyplot as plt
 
 API_KEY = "your_openweathermap_api_key"
-BASE_URL = "http://api.openweathermap.org/data/2.5/weather?"
 
 def get_weather_data(city):
     """Fetch current weather data for a city."""
@@ -18,7 +17,7 @@ def get_weather_data(city):
 def display_weather(data):
     """Display weather information from the API response."""
     
-    print("\n📍 Weather Information:")
+    print("\n Weather Information:")
     
     print(f"City: {data['name']}")
     
@@ -52,7 +51,7 @@ def plot_temperature_trend(city):
     plt.show()
 
 if __name__ == "__main__":
-    print("🌦️  Welcome to the Weather CLI Tool!")
+    print(Welcome to the Weather CLI Tool!")
     city = input("Enter a city name: ")
     
     weather_data = get_weather_data(city)
