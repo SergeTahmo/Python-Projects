@@ -17,14 +17,23 @@ def get_weather_data(city):
 
 def display_weather(data):
     """Display weather information from the API response."""
+    
     print("\n📍 Weather Information:")
+    
     print(f"City: {data['name']}")
+    
     print(f"Temperature: {data['main']['temp']}°C")
+    
     print(f"Feels Like: {data['main']['feels_like']}°C")
+    
     print(f"Weather: {data['weather'][0]['description'].capitalize()}")
+    
     print(f"Humidity: {data['main']['humidity']}%")
+    
     print(f"Wind Speed: {data['wind']['speed']} m/s")
+    
     print(f"Date/Time: {datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
+    
 
 def plot_temperature_trend(city):
     """Simulate and plot a temperature trend over 7 days."""
